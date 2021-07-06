@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.enlace1{
+    background-color: rgb(26, 67, 179);
+    color: white;
+    display: block;
+}
+
+.enlace2{
+    background-color: green;
+    color: white;
+    display: block;
+    height: 100px;
+    width: 300px;
+    padding: 30px;
+    margin: 10px;
+
+}
+
+p{
+    background-color: rgb(214, 58, 58);
+}
+
+
+.contenedor{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    overflow: scroll;
+    /* 
+        1 solo valor -> todo es igual
+        con dos -> por ejes
+        con cuatro -> Arriba, Derecha, Abajo, Izquierda
+    */
+    /* padding: 10px; */
+
+    /* box-sizing: content-box; */
+}
+
+.hijo{
+    background-color: rgb(190, 190, 17);
+    height: 80%;
+    width:  80%;
+    margin: 10px;
+    /* box-sizing: content-box; */
+}
+
+.overflow{
+    background-color: brown;
+    color: black;
+    padding: 10px;
+    width: 250px;
+    height: 150px;
+    overflow: auto;
+}
+
+.enlaces{
+    background-color: aqua;
+    color: crimson;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.padre{
+    border: 2px solid red;
+    padding: 20px 0;
+    width: 600px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: s; */
+    /* box-sizing: content-box; */
+    flex-wrap: wrap;
+}
+
+.padre .hijoDiv{
+    height: 30px;
+    width: 100px;
+    outline: 1px solid black;
+
+    /* 
+        100 + 1 + 1 => 102
+    */
+}
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: blue;
+}
+
+.main .header{
+    background-color: aqua;
+    width: 100%;
+    height: 15%;
+}
+
+.main .content{
+    width: 70%;
+    height: 70%;
+    background-color: brown;
+}
+
+.main .aside{
+    width: 30%;
+    height: 70%;
+    background-color: cornflowerblue;
+}
+
+.main .footer{
+    width: 100%;
+    height: 15%;
+    background-color: chartreuse;
+}
